@@ -1,0 +1,74 @@
+<ion-grid>
+  <ion-row>
+    <ion-col>
+<!--      <div>-->
+        <span>Search</span>
+<!--      </div>-->
+    </ion-col>
+    <ion-col>
+<!--      <div>-->
+        <ion-icon [src]="slider"></ion-icon>
+<!--      </div>-->
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-searchbar placeholder="Where do you want to go?" animated></ion-searchbar>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div>For you</div>
+    </ion-col>
+    <ion-col>
+      <div>See all</div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div>
+        <ion-card *ngFor="let card of [1,2,3]">
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div>
+        <span>Popular</span>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <div>
+        <ion-card *ngFor="let card of [1,2,3]">
+          <ion-card-header>
+            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>

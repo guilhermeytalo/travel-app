@@ -1,4 +1,15 @@
-<div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<div *ngIf="name === 'Tab 1 page'">
+  <app-home></app-home>
+</div>
+
+<div *ngIf="name === 'Tab 2 page'">
+  <app-search></app-search>
+</div>
+
+<div *ngIf="name === 'Tab 3 page'">
+  <app-saved></app-saved>
+</div>
+
+<div *ngIf="name === 'Tab 4 page'">
+  <app-profile></app-profile>
 </div>

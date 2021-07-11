@@ -10,6 +10,8 @@ export class ExploreContainerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.name);
+  }
 
 }

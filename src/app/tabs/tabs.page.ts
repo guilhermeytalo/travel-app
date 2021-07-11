@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-tabs',
@@ -6,7 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss']
 })
 export class TabsPage {
+  home: any;
+  search: any;
+  save: any;
+  config: any;
 
-  constructor() {}
+  constructor() {
+    this.home = './assets/icon/home.svg';
+    this.search = './assets/icon/search.svg';
+    this.save = './assets/icon/bookmark.svg';
+    this.config = './assets/icon/hexagon.svg';
+  }
 
 }
